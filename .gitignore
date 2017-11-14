@@ -6,3 +6,10 @@
 *.filters
 *.ipch
 Problem 1/.vs/problem 1/v15/.suo
+*.log
+*.tlog
+*.pdb
+*.obj
+*.ilk
+*.idb
+*.exe
