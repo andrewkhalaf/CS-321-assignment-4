@@ -1,4 +1,5 @@
 #include <iostream>
+#include<time.h>
 using namespace std;
 #define N 100
 
@@ -9,6 +10,7 @@ int partition(int A[], int p, int r);
 void main()
 
 {
+	srand(time(NULL));
 	int A[N];
 
 	for (int i = 0; i < N; i++)
@@ -17,8 +19,8 @@ void main()
 		A[i] = i;
 
 	}
-	//for (int i = 2; i < N; i++)
-		//swap(A[i], A[rand() % i + 1]);
+	for (int i = 2; i < N; i++)
+		swap(A[i], A[rand() % i + 1]);
 
 
 	int median = qselect(A, 0, N-1, N / 2);
